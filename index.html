@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta name="viewport" content="width=device-width, initial-
-    scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website</title>
     <link rel="stylesheet" href="styles.css">
      <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/bb53a6d40a.js"></script>
   </head>
   <body>
     <section class="header">
       <nav>
         <a href="index.html"><img src="images/logo.png"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
@@ -24,6 +26,7 @@
           </ul>
 
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
 
       <div class="text-box">
@@ -32,5 +35,16 @@
         <a href="#" class="hero-btn">Click to know more</a>
       </div>
     </section>
+    <!-- Funcionalidad de los botones de nav-menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
