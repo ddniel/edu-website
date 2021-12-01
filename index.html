@@ -3,13 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website</title>
+
     <link rel="stylesheet" href="styles.css">
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/bb53a6d40a.js"></script>
      <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/bb53a6d40a.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+
 
   </head>
   <body>
@@ -121,7 +125,7 @@
       <div class="row">
         <div class="testimonial-col">
           <img src="images/user1.jpg">
-          <div class="">
+          <div>
             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
             <h3>Christian Castro</h3>
             <i class="fas fa-star"></i>
@@ -133,7 +137,7 @@
         </div>
         <div class="testimonial-col">
           <img src="images/user2.jpg">
-          <div class="">
+          <div>
             <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </p>
             <h3>Maria Carey</h3>
             <i class="fas fa-star"></i>
@@ -153,10 +157,10 @@
       var navLinks = document.getElementById("navLinks");
 
       function showMenu(){
-        navLinks.style.right = "0";
+        navLinks.style.display = "block";
       }
       function hideMenu(){
-        navLinks.style.right = "-200px";
+        navLinks.style.display = "none";
       }
     </script>
   </body>
